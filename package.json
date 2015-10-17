@@ -1,0 +1,16 @@
+{
+  "name": "k-m-log",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "285858315@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "on-finished": "^2.3.0"
+  }
+}
