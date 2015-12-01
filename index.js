@@ -25,7 +25,9 @@ var Log = function Log(opts){
 		}
 		var time = Date.now()
 		onFinished(res,function(err,res){
-			console.log(log.join("\n"))
+			log.forEach(function(item,index){
+				console.log(index+1+".",item)
+			})
 			console.log(
 				[
 					"-----------",
