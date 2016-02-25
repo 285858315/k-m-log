@@ -1,6 +1,6 @@
 {
   "name": "k-m-log",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "https://github.com/285858315/k-m-log",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^3.10.1",
+    "lodash.tostring": "^4.1.1",
     "moment": "^2.10.6",
     "on-finished": "^2.3.0"
   }
