@@ -17,7 +17,9 @@ var Log = function Log(opts){
 		req[opts.name] = function(){
 			var args = Array.prototype.slice.call(arguments)
 			_.forEach(args,function(item,index){
-				if(typeof item == "object"){
+				if(item instanceof Error){
+					args[index] = item.stack
+				}else if(typeof item == "object"){
 					args[index] = JSON.stringify(item)
 				}
                 args[index] = toString(args[index]).slice(0,opts.limit)
